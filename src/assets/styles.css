@@ -1,0 +1,19 @@
+
+  /* styles.css */
+
+:root {
+    --primary-color: #000525;
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    /* Other header styles */
+  }
+  
+  .footer {
+    background-color: var(--primary-color);
+    /* Other footer styles */
+  }
+  
+  /* Other styles using the primary color */
+  
