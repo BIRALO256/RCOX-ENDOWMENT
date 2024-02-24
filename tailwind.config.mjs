@@ -4,11 +4,16 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				"jovic-white": "#ffffff",
+				
+				"jovic": "#5CB85C",
+				"jovic-white" :"#ffffff",
+				"jovic-yellow":"#fbaa00",
+				"xephas-white": "#ffffff",
 				"xephas-navy": "#000525",
 				"xephas-yellow": "#fbaa00",
-				"jovic": "#050505",
+				"xephas-bg": "#ffffff",
 				"xephas-hover":"#1126bf"
+				
 			  },
 		},
 		fontFamily: {

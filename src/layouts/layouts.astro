@@ -1,7 +1,8 @@
 ---
-import Header from  '../components/header.astro';
-import Footer from  '../components/footer.astro';
+import Header from  '../components/Header.astro';
+import Footer from  '../components/Footer.astro';
 import { ViewTransitions } from 'astro:transitions';
+
 
 
 
@@ -12,9 +13,12 @@ interface Props{
 }
 const {
 	title ="jovic biralo",
+	
 	Description ="A comunity of software engineers",
-	image ="/images/brand.jpg"
+	image ="/images/brand.jpg",
+	
 } = Astro.props;
+//
 ---
 
 <!DOCTYPE html>
