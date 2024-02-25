@@ -2,52 +2,72 @@
 import Layout from '../layouts/layouts.astro'
 import Main from '../components/Main.astro'
 import H1 from '../components/H1.astro'
-import SocialLinks from "../components/SocialLinks.astro";
-import socialData from "../data/social.json";
+import Section from '../components/Section.astro'
 ---
 
 <Layout title="About Us">
   <Main class="py-12">
-    <div class="flex items-center justify-center mb-8 mt-8">
-      <img src="/Xephas.jpg" alt="Xephas" class="w-32 h-32 rounded-full object-cover" />
-    </div>
-    <H1 text="ABOUT ME"></H1>
-    
-    <p class="text-lg text-gray-700">Xephas, also known as Mugisa Brian Cephas, is an expert Flutter Developer since 2020. He is a Software Engineer with extensive experience in Cross-Platform App Development and a profound passion for Graphics and UI/UX Design. His purpose and passion lie in designing and developing experiences that improve people's lives.</p>
-    <p class="text-sky-950 text-lg font-semibold mt-7  pb ">Connect with Xephas:</p>
+    <H1  text="About Us" ></H1>
+  <Section>
 
-    <ul class="app-card-list social-link-list">
-      {
-        socialData.map((socialData) => {
-          return (
-            <SocialLinks
-              name={socialData.name}
-              url={socialData.url}
-              image={socialData.image}
-            />
-          );
-        })
-      }
-    </ul>
-  
+
+
+    <div class="grid lg:grid-cols-2 gap-2">
+      <div class="p-4">
+        <!-- Left column for text -->
+        <p class="text-jovic-background  text-2xl lg:text-3xl " >What is Rcox Endowment ?</p>
+        <p class="text-italic font-medium text-lg lg:text-xl pt-2" >We are a dedicated organization based in Uganda committed to empowering vulnerable children and transforming their lives.We firmly believe that <span class="text-jovic">every child deserves</span> the opportunity to thrive, regardless of their circumstances.</p>
+      </div>
+      <div class="">
+        <!-- Right column for image -->
+        <img src="src/images/home1.jpg" alt="Image" class="object-cover w-full md:h-80 h-60">
+      </div>
+    </div>
+    
+
+  <p class="text-jovic-background  text-2xl lg:text-3xl pt-6" > Our Mission</p>
+ 
+  <p class="text-italic font-medium text-lg lg:text-xl pt-2" >At Rcox Endowment , we're on a mission to break the cycle of poverty by providing essential resources and support to vulnerable children in Uganda. Through education, housing, and healthcare, we're building brighter futures and empowering communities. Join us in creating lasting change</p>
+
+  <!-- staff memeber or board -->
+
+  <p class="text-jovic-background  text-2xl lg:text-3xl md:text-center pt-5" >Board</p>
+<!--first staff memeber -->
+
+  <div class="grid md:grid-cols-2 gap-4 pt-4">
+    <!-- Image -->
+    <div class=" rounded overflow-hidden relative h-0 pb-2/3 sm:pt-1/3 lg:pt-2/3">
+      <img src="src/images/Robert.jpg" alt="Image" class="absolute inset-0  w-full h-full">
+    </div>
+    
+    
+    <!-- Information -->
+    <div class="md:order-2">
+      <h2 class="text-lg font-semibold">Nij-Pajikwat-Mo`z</h2>
+      <p class="text-sm mb-2">Business Lady and Social Worker</p>
+      <p class="text-sm">Chief Nij-Pajikwat-Mo`z (Chief Two Running Elk), aka Robert Cox</p>
+    </div>
+  </div>
+   <!--second member  -->
+
+   <div class="grid md:grid-cols-2 gap-4 pt-4">
+    <!-- Image -->
+    <div class="w-32 h-full md:w-50 md:h-70 rounded overflow-hidden">
+      <img src="src/images/Mable.jpg" alt="Image" class="object-cover w-full h-full">
+    </div>
+    
+    
+    <!-- Information -->
+    <div class="md:order-2">
+      <h2 class="text-lg font-semibold">Nij-Pajikwat-Mo`z</h2>
+      <p class="text-sm mb-2">Business Lady and Social Worker</p>
+      <p class="text-sm">Chief Nij-Pajikwat-Mo`z (Chief Two Running Elk), aka Robert Cox</p>
+    </div>
+  </div>
+
+  </Section>
       
   </Main>
 </Layout>
 
-<style>
-  .social-link-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-  }
-  /*show all 4 in one row*/
-  .social-link-list > li {
-    flex: 1 1 25%;
-  }
-  p {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-</style>
+
