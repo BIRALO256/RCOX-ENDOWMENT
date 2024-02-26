@@ -11,7 +11,6 @@ export default {
 				
 				"jovic": "#5CB85C",
 				"jovic-white" :"#ffffff",
-				"xephas-white": "#ffffff",
 				"xephas-navy": "#000525",
 				"xephas-yellow": "#fbaa00",
 				"xephas-bg": "#ffffff",

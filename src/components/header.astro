@@ -21,41 +21,43 @@ const { pageUrl} = Astro.props;
    
 
  <!-- other action buttons -->
- <div class="flex items-center justify-center space-x-4">
-  <!-- Pages -->
-  {
-    // @kalya can be replaced with the hotel name
-    pages.map((pageItem) => (
-      <a
-        href={pageItem.href}
-        class={
-          pageItem.href === pageUrl || pageItem.otherUrls.includes(pageUrl)
-            ? "px-4 py-2 text-xs font-extrabold text-center uppercase rounded-full text-xephas-navy bg-xephas-yellow hover:cursor-pointer"
-            : "text-xs line-clamp-1 font-bold text-center uppercase text-xephas-white hover:underline hover:cursor-pointer"
-        }
-      >
-        {pageItem.label}
-      </a>
-    ))
-  }
+ 
+
+<div class="flex md:hidden">
+  <button id="hamburger-btn" class="text-yellow-200 focus:outline-none">
+    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 6H20m4 6H20m-4 6H20" stroke="currentColor" stroke-width="2"></path>
+    </svg>
+  </button>
 </div>
+<ul id="menu" class="hidden md:flex gap-x-5 uppercase  ">
+  <li><a href="/" class="text-jovic-white font-bold hover:underline">Home</a></li>
+  <li><a href="/about" class="text-jovic-white  font-bold  hover:underline">About Us</a></li>
+  <li><a href="/stories" class="text-jovic-white  font-bold hover:underline">Stories</a></li>
+  <li><a href="/contact" class="text-jovic-white font-bold hover:underline">Contact Us</a></li>
+
+</ul>
 
 </header>
 
-
-
-
-
   <!--Set active class on nav when the page is active -->
   <script>
- const hamburgerBtn = document.getElementById('hamburger-btn');
-const menu = document.getElementById('menu');
-
-hamburgerBtn.addEventListener('click', () => {
-  hamburgerBtn.classList.toggle('active');
-  menu.classList.toggle('hidden');
-});
-
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const menu = document.getElementById('menu');
+  
+    hamburgerBtn.addEventListener('click', () => {
+      hamburgerBtn.classList.toggle('active');
+      menu.classList.toggle('hidden');
+    });
+  
+    // Check if the page has been refreshed before
+    const hasPageBeenRefreshed = sessionStorage.getItem('hasPageBeenRefreshed');
+  
+    if (!hasPageBeenRefreshed) {
+      // If the page has not been refreshed before, reload it and set the flag
+      sessionStorage.setItem('hasPageBeenRefreshed', 'true');
+      location.reload();
+    }
   </script>
   -->
 
