@@ -10,23 +10,33 @@ import { developer} from "../scripts/constanst";
 
 <footer
   id="footer"
-  class=`flex flex-col px-4 py-4 lg:px-10 space-y-1 text-xs text-center text-white bg-jovic`
+  class=`grid grid-cols-1 lg:grid-cols-2 px-4 py-4 lg:px-10 space-y-1 text-xs text-center text-white bg-jovic`
 >
-  <p class=" text-lg font-bold">{developer.copyright}</p>
+  <!-- Left column for website pages -->
+  <div class="">
+    <!-- Add links to website pages here -->
+    <ul class="mt-2 uppercase">
+      <li><a href="/" class="underline text-jovic-white font-bold text-[12px] text-xephas-white">Home</a></li>
+      <li><a href="/about" class="underline text-jovic-white font-bold text-[12px] text-xephas-white">About Us</a></li>
+      <li><a href="/stories" class="underline text-jovic-white font-bold text-[12px] text-xephas-white">Stories</a></li>
+      <li><a href="/contact" class="underline text-jovic-white font-bold text-[12px] text-xephas-white">Contact Us</a></li>
+    </ul>
+  </div>
 
-  <!-- names -->
-  <p class="mb-2">
-    Website by
-    <a
-      href={developer.footerCollaboratorUrl}
-      class=`underline text-xephas-yellow font-bold  text-xephas-white}`
-      target="_blank"
-      rel="noopener">{developer.footerCollaborator} &rarr;</a
-    >
-  </p>
-
- 
-  </p>
+  <!-- Right column for footer content -->
+  <div class="">
+    <p class="text-xl font-bold">{developer.copyright}</p>
+    <p class="mb-2 text-[12px]">
+      Website by
+      <a
+        href={developer.footerCollaboratorUrl}
+        class=`underline text-xephas-yellow font-bold text-xephas-white}`
+        target="_blank"
+        rel="noopener">{developer.footerCollaborator} &rarr;</a
+      >
+    </p>
+    <!-- Add any additional footer content here -->
+  </div>
 </footer>
  
 
