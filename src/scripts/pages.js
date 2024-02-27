@@ -19,6 +19,7 @@ class Page {
     new Page("/about", "about-Us"),
     new Page("/stories", "Stories"),
     new Page("/contact", "Contact-Us"),
+    
    
     
   ];
