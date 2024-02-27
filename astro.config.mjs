@@ -20,9 +20,9 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   server:{
-    port:300,
+    port:30,
   },
-  site: 'https://astronaut.github.io',
-  base: '/RCOX-ENDOWMENT',
+  site: 'https://biralo256.github.io/',
+  base: '/',
   integrations: [tailwind()]
 });
