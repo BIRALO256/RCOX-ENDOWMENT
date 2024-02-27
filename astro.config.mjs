@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 
 const SERVER_PORT =300
+LOCALHOST_URL ='https://localhost:${SERVER_PORT}'
 //the url to access your blog after deploying it somewhere like(github pages ectc)
 const LIVE_URL ="https://biralo256.github.io/";
 //this is  the astro command your  npm scripts runs
