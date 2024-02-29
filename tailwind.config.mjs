@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			padding:{
-				'1/3':'33.33333%',
+				'1/3':'10.101010%',
                 '2/3':'66.6666%',
 			},
 			colors: {
@@ -15,6 +15,7 @@ export default {
 				"xephas-yellow": "#fbaa00",
 				"xephas-bg": "#ffffff",
 				"xephas-hover":"#1126bf",
+				"handle-bg": "#1a1919",
 				"jovic-background":"#4A90E2"
 				
 			  },
