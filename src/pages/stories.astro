@@ -1,7 +1,7 @@
 ---
-import Layout from '../layouts/layouts.astro'
-import Main from '../components/Main.astro'
 import H1 from '../components/H1.astro'
+import Main from '../components/Main.astro'
+import Layout from '../layouts/layouts.astro'
 
 import Section from '../components/Section.astro'
 ---
@@ -36,32 +36,25 @@ pageUrl="/stories"
               <!-- Replace the image with actual picture -->
               <img src="/images/Luku.jpg" alt="Luduk at School" class="   h-3/5 w-4/5 rounded-md mt-2">
             </div>
-          <!-- Video of Headmaster thanking the organization -->
-          <div class="bg-gray-100 p-4 rounded-lg shadow-md">
-            <h3 class="font-semibold mb-2">Thank You Message from Headmaster</h3>
-            <p class="">Watch the heartfelt message from Luduk's school headmaster expressing gratitude for the support provided by our organization.As we continue to assist children like Luduk, your support in various ways can make a significant impact. Explore how you can contribute and make a difference today</p>
-            <!-- Replace the video with actual embedded video -->
-            <div class=" mt-2 overflow-hidden">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/_FGixhFcUFA?si=qBBHL60Kn7Xy8w34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-          </div>
-
           </div>
         </div>
          <!--Children left by their Mother and father passed on -->
       
         <div class=" mb-2">
-          <h2 class="text-2xl font-semibold text-center mb-4">Queen, Sheem, Eric, and Bright</h2>
+          
           
           <div class="grid md:grid-cols-2 gap-6">
             
             <!-- Before Organization -->
-            <div class="bg-gray-100 rounded-lg shadow-md py-4 px-4 overflow-hidden  ">
-              <p>Meet <strong class="text-jovic pt-2">Queen, Sheem, Eric, and Bright</strong>. Left by their mother and with their father passed on, they faced hardships and were forced to drop out of school. With the support of our organization, they now have a stable home and are back in school. You can help them continue to improve their situation.</p>
-              <iframe width="560" height="500" src="https://www.youtube.com/embed/kfgh_Ya8DvY?si=4is1wv6H7Bp_rzqK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h3 class="font-semibold mb-2">Odongo</h3>
+              <p>Odongo Noah stands with pride, ready to embrace his education journey. Thanks to your support, he has access to school fees and necessary scholastic materials to thrive in his studies. However, there are still other needs he requires assistance with to ensure his continued success</p>
+              <!-- Replace the image source with the actual photo -->
+              <img src="/images/Odongo.png" alt="Odongo Noah in Uniform" class="md:h-3/5 md:w-4/5 rounded-md p-3 ">
             </div>
             <!-- After Organization -->
             <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              
               <h3 class="font-semibold mb-2">Queen</h3>
               <p>Here is Queen, one of the children, in her school uniform. With the support of our organization, she is now back in school and has the opportunity to pursue her education. Your contribution can make a difference in their lives.</p>
               <!-- Replace the image source with the actual photo -->
@@ -69,32 +62,45 @@ pageUrl="/stories"
             </div>
           </div>
         </div>
+      
 
-
-        <!--Odongo Noah -->
-        <div class=" mb-2">
-          <h2 class="text-2xl font-semibold text-center mb-4">Odongo Noah's Journey: Before and After</h2>
-          <div class="grid md:grid-cols-2 gap-6">
-            
-            <!-- Before Organization -->
-            <div class="bg-gray-100 rounded-lg shadow-md py-4 px-4 overflow-hidden  ">
-              <h3 class="font-semibold mb-2">Before</h3>
-              <p class="p-3">Watch the video below to hear Odongo Noah share his story before our organization found him. Despite facing challenges, he held onto hope for a better future.</p>
-              <iframe width="560" height="315 md:500" src="https://www.youtube.com/embed/4FP1bRftFXY?si=wUAuAZ3HomadYixC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <!-- After Organization -->
+              <!-- Featured Videos Section -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">Featured Videos</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Button for Headmaster's Thank You Message -->
             <div class="bg-gray-100 p-4 rounded-lg shadow-md">
-              <h3 class="font-semibold mb-2">After</h3>
-              <p>Now, Odongo Noah stands with pride, ready to embrace his education journey. Thanks to your support, he has access to school fees and necessary scholastic materials to thrive in his studies. However, there are still other needs he requires assistance with to ensure his continued success</p>
-              <!-- Replace the image source with the actual photo -->
-              <img src="/images/Odongo.png" alt="Odongo Noah in Uniform" class="md:h-3/5 md:w-4/5 rounded-md p-3 ">
+              <h3 class="font-semibold mb-2">Thank You Message from Headmaster</h3>
+              <p class="">Watch the heartfelt message from Luduk's school headmaster expressing gratitude for the support provided by our organization. As we continue to assist children like Luduk, your support in various ways can make a significant impact. Explore how you can contribute and make a difference today</p>
+              <!-- Button linking to the YouTube video -->
+              <div class="mt-2">
+                <a href="https://www.youtube.com/watch?v=_FGixhFcUFA&t=12s" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Watch Video</a>
+              </div>
+            </div>
+            <!-- Button for Odongo Noah's Journey Video -->
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h3 class="font-semibold mb-2">Odongo Noah's Journey Video</h3>
+              <p class="">Watch the video to hear Odongo Noah share his story before our organization found him. Despite facing challenges, he held onto hope for a better future.</p>
+              <!-- Button linking to the YouTube video -->
+              <div class="mt-2">
+                <a href="https://www.youtube.com/watch?v=4FP1bRftFXY&t=11s" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Watch Video</a>
+              </div>
+            </div>
+            <!-- Button for Siblings' Story Video -->
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h3 class="font-semibold mb-2">Siblings' Story Video</h3>
+              <p class="">Watch the video showcasing the story of Queen, Sheem, Eric, and Bright, who faced hardships and were forced to drop out of school. With the support of our organization, they now have a stable home and are back in school.</p>
+              <!-- Button linking to the YouTube video -->
+              <div class="mt-2">
+                <a href="https://www.youtube.com/watch?v=kfgh_Ya8DvY" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Watch Video</a>
+              </div>
             </div>
           </div>
         </div>
-        
 
 
-        
+
+
         <!-- Section: Support More Children -->
         <H1 text="Support More Children" ></H1>
       
