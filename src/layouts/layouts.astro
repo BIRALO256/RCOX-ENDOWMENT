@@ -4,8 +4,11 @@ import Footer from  '../components/Footer.astro';
 
 import { ViewTransitions } from 'astro:transitions';
 
-
-
+import {
+  baseUrl,
+  developer,
+  keywords,
+} from '../scripts/constanst.js'
 
 
 
@@ -35,11 +38,45 @@ const {
         <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
 		/> 
-<!--Website Icon -->
 
-<link rel="icon" href="Logo.svg" type="image/svg+xml">
+		<!--Website Icon -->
 
-<!-- Google tag (gtag.js) -->
+		<link rel="icon" href="Logo.svg	" type="image/svg+xml">
+
+		<!-- Primary Meta Tags -->
+		<meta name="title" content={title} />
+		<meta name="description" content={Description} />
+		<meta name="keywords" content={keywords} />
+		<meta name="author" content={developer.author} />
+		<meta name="copyright" content={developer.copyright} />
+		<meta name="robots" content="index, follow" />
+		<meta name="rating" content="general" />
+
+        <!-- Facebook Open Graph -->
+		<meta property="og:title" content={title} />
+		<meta property="og:site_name" content={title} />
+		<meta property="og:url" content={baseUrl} />
+		<meta property="og:description" content={Description} />
+		<meta property="og:type" content="website" />
+		<!-- <meta property="og:image" content={pageCoverImage} /> -->
+
+
+		<!-- Twitter Open Graph -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:site" content={developer.handle} />
+		<meta name="twitter:creator" content={developer.handle} />
+		<meta name="twitter:description" content={Description} />
+		<!-- <meta name="twitter:image" content={pageCoverImage} /> -->
+		<meta name="twitter:image:alt" content={Description} />
+
+		<!-- iOS meta tags & icons -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-title" content={title} />
+		<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+        <!-- Google tag (gtag.js) -->
 			<script  
 			type="text/partytown"
 			async src="https://www.googletagmanager.com/gtag/js?id=G-3LGKJLKP9M"></script>

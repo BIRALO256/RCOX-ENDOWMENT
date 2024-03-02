@@ -2,6 +2,10 @@
 //TODO: add cover image
 // export const coverImage = baseUrl +  "/images/cover.webp";
 
+export const baseUrl = "https://rcoxendowmentservices.org/";
+
+
+
 // code name
 export const codeName = "RCOX ENDOWMENT SERVICES";
 
